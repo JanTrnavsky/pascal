@@ -5,7 +5,7 @@ zerops:
 
       buildCommands:
         - npm i
-        - npm run build my-app
+        - npm run build
 
       deployFiles:
         - dist/~
