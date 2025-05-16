@@ -1,11 +1,15 @@
 zerops:
-  - setup: app
+  - setup: static
     build:
       base: nodejs@20
+
       buildCommands:
         - npm i
-        - npm build
+        - npm run build my-app
+
       deployFiles:
         - dist/~
+
+
     run:
       base: static
